@@ -2,7 +2,7 @@
 
 A complete autonomous AI agent system for legal research, built with Python and FastAPI.
 
-## 🏗️ Architecture
+## Architecture
 
 This backend implements a multi-agent system for legal research with the following components:
 
@@ -23,7 +23,7 @@ This backend implements a multi-agent system for legal research with the followi
 - **Models** (`models.py`) - Pydantic data models for requests and responses
 - **Main** (`main.py`) - FastAPI application with REST endpoints
 
-## 🚀 Quick Start
+## Quick Start
 
 1. **Install Dependencies**
 ```bash
@@ -44,7 +44,7 @@ python main.py
 
 The API will be available at `http://localhost:8000`
 
-## 📚 API Endpoints
+## API Endpoints
 
 - `POST /api/research` - Submit legal research query
 - `GET /api/health` - System health check
@@ -53,7 +53,7 @@ The API will be available at `http://localhost:8000`
 - `POST /api/add-documents` - Add documents to vector store
 - `GET /api/search` - Search vector store
 
-## 🤖 Agent Workflow
+## Agent Workflow
 
 1. **Retriever** searches legal databases for relevant cases and statutes
 2. **Analyzer** identifies patterns, precedents, and jurisdictional differences  
@@ -65,14 +65,14 @@ Each agent includes:
 - Self-evaluation for quality assurance
 - Comprehensive error handling
 
-## 🔧 Configuration
+## Configuration
 
 Required API keys:
 - OpenAI API (for GPT-4)
 - Pinecone API (optional, falls back to FAISS)
 - CourtListener API (for legal case access)
 
-## 📝 Example Usage
+## Example Usage
 
 ```python
 # Submit a legal research query
@@ -85,26 +85,26 @@ response = requests.post("http://localhost:8000/api/research", json=query)
 legal_brief = response.json()
 ```
 
-## 🏛️ Legal Database Integration
+## Legal Database Integration
 
 - **CourtListener**: Federal and state court cases
 - **Harvard Caselaw Access**: Historical case law
 - **Vector Store**: Local document storage and similarity search
 
-## 🔄 Retry & Reliability
+## Retry & Reliability
 
 - Exponential backoff for failed API calls
 - Agent self-evaluation for quality control
 - Graceful fallback mechanisms
 - Comprehensive error reporting
 
-## 📊 Features
+## Features
 
-✅ Autonomous multi-agent architecture  
-✅ Legal database integration  
-✅ Vector-based document retrieval  
-✅ Structured legal brief generation  
-✅ Citation management and formatting  
-✅ Jurisdiction-specific analysis  
-✅ Real-time API with FastAPI  
-✅ Comprehensive error handling 
+- Autonomous multi-agent architecture  
+- Legal database integration  
+- Vector-based document retrieval  
+- Structured legal brief generation  
+- Citation management and formatting  
+- Jurisdiction-specific analysis  
+- Real-time API with FastAPI  
+- Comprehensive error handling 
