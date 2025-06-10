@@ -2,7 +2,7 @@
 
 A complete AI-powered legal research system with autonomous agents that retrieve, analyze, and synthesize legal information to generate comprehensive legal briefs with proper citations and jurisdiction analysis.
 
-## 🎯 Overview
+## Overview
 
 This project implements a modular AI system that answers complex legal queries by:
 1. **Retrieving** case law and statutes from legal databases
@@ -10,7 +10,7 @@ This project implements a modular AI system that answers complex legal queries b
 3. **Summarizing** key insights and legal principles
 4. **Composing** structured legal briefs with citations
 
-## 🏗️ Architecture
+## Architecture
 
 ### Backend (`/backend`)
 - **Python/FastAPI** - REST API with autonomous agent system
@@ -25,7 +25,7 @@ This project implements a modular AI system that answers complex legal queries b
 - **Professional Display** - Structured legal brief presentation
 - **Form Handling** - Query validation and submission
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Backend Setup
 ```bash
@@ -47,13 +47,13 @@ npm install
 npm start
 ```
 
-## 🔑 Required API Keys
+## Required API Keys
 
 - **OpenAI API** - For GPT-4 language model
 - **Pinecone API** - For vector database (optional, falls back to FAISS)
 - **CourtListener API** - For legal case database access
 
-## 📱 Usage
+## Usage
 
 1. Open `http://localhost:3000` in your browser
 2. Navigate to the Research page
@@ -62,7 +62,7 @@ npm start
 5. Click "Start Research" and wait for AI agents to complete analysis
 6. View comprehensive legal brief with citations
 
-## 🤖 Agent System
+## Agent System
 
 ### Retriever Agent
 - Searches legal databases and vector stores
@@ -84,19 +84,19 @@ npm start
 - Formats citations properly
 - Ensures professional legal language
 
-## 📊 Features
+## Features
 
-✅ **Autonomous AI Agents** with specialized functions  
-✅ **Legal Database Integration** with major legal APIs  
-✅ **Vector Memory System** for document storage  
-✅ **Retry Logic** with exponential backoff  
-✅ **Self-Evaluation** for quality assurance  
-✅ **Structured Legal Briefs** with proper citations  
-✅ **Jurisdiction Analysis** and tagging  
-✅ **Modern React UI** with real-time updates  
-✅ **Professional Grade** legal research output  
+- **Autonomous AI Agents** with specialized functions  
+- **Legal Database Integration** with major legal APIs  
+- **Vector Memory System** for document storage  
+- **Retry Logic** with exponential backoff  
+- **Self-Evaluation** for quality assurance  
+- **Structured Legal Briefs** with proper citations  
+- **Jurisdiction Analysis** and tagging  
+- **Modern React UI** with real-time updates  
+- **Professional Grade** legal research output  
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── backend/
@@ -120,7 +120,7 @@ npm start
     └── public/
 ```
 
-## 🔄 Workflow
+## Workflow
 
 1. **User Query** → Legal question submitted via frontend
 2. **Orchestrator** → Coordinates agent workflow
@@ -130,7 +130,7 @@ npm start
 6. **Composer** → Generates final structured legal brief
 7. **Response** → Returns comprehensive brief to frontend
 
-## 📝 Example Output
+## Example Output
 
 The system generates professional legal briefs containing:
 - Executive summary answering the legal question
@@ -140,7 +140,7 @@ The system generates professional legal briefs containing:
 - Supporting case citations with proper formatting
 - Jurisdiction-specific analysis and considerations
 
-## 🛡️ Reliability Features
+## Reliability Features
 
 - **Exponential Backoff** for API failures
 - **Agent Self-Evaluation** for quality control
@@ -148,6 +148,6 @@ The system generates professional legal briefs containing:
 - **Comprehensive Error Handling** with detailed logging
 - **Input Validation** and query sanitization
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License. 
